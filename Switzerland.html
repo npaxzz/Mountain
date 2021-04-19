@@ -2,11 +2,9 @@
 <html>
   <head>
     <title>Mountain</title>
-    <link rel="stylesheet" href="css.css" />
+    <link rel="stylesheet" href="cssS.css" />
   </head>
-  <body
-    style="min-height: 100vh; background: linear-gradient(#429eb3, #4cfcc7)"
-  >
+  <body>
     <header>
       <a href="#" class="Menu">Switzerland</a>
       <ul>
@@ -16,10 +14,35 @@
         <li><a href="Japanese.html">Japanese</a></li>
       </ul>
     </header>
-    <!-- <section>
+    <section>
       <img src="img/stars.png" id="stars" />
       <img src="img/Switzerland_mountain.png" id="s1" />
       <h2 id="text">Switzerland</h2>
-    </section> -->
+    </section>
+    <div class="sec">
+      <h1>Switzerland</h1>
+      <br /><br />
+      <h2>GEOGRAPHY</h2>
+      <p>
+        Switzerland is a small mountainous country located in central Europe.
+        This landlocked country is about the size of New Jersey and is between
+        France and Italy. It is also bordered by Austria, Germany, and
+        Liechtenstein.
+      </p>
+      <br />
+      <p>
+        Most of the population lives in the plateau which is between the high
+        Alps in the south and the Jura mountains in the north. The mountainous
+        area in the south is sparsely populated.
+      </p>
+    </div>
+    <script>
+      let text = document.getElementById("text");
+
+      window.addEventListener("scroll", (event) => {
+        let value = window.scrollY;
+        text.style.marginRight = value * 3.5 + "px";
+      });
+    </script>
   </body>
 </html>

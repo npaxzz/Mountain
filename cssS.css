@@ -6,7 +6,7 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(#6235aa, #7597de);
+  background: linear-gradient(#429eb3, #4cfcc7);
 }
 
 header {
@@ -52,7 +52,7 @@ header ul li a {
 header ul li a:hover,
 header ul li a.Home {
   background: #fff;
-  color: #2b1055;
+  color: #138576;
 }
 
 section {
@@ -72,19 +72,10 @@ section img {
   object-fit: cover;
 }
 
-section img#moon {
-  mix-blend-mode: hard-light;
-  mix-blend-mode: screen;
-}
-
-section img#mountains_front {
-  z-index: 2;
-}
-
-#text {
+.text {
   position: absolute;
-  right: -200px;
-  color: #fff;
+  left: -200px;
+  color: rgb(49, 219, 216);
   white-space: nowrap;
   font-size: 7.5vw;
   z-index: 1;
@@ -98,7 +89,10 @@ section img#mountains_front {
 
 .sec h1 {
   margin-top: 20px;
-  margin-bottom: 30px;
+  color: #fff;
+}
+
+.sec h2 {
   color: #fff;
 }
 
