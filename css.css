@@ -7,6 +7,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
 header .Menu {
@@ -41,4 +42,25 @@ header ul li a:hover,
 header ul li a.Home {
   background: #fff;
   color: #2b1055;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section img#moon {
+  mix-blend-mode: hard-light;
+  mix-blend-mode: screen;
 }
