@@ -63,5 +63,13 @@
         weathering and erosion.
       </p>
     </div>
+    <script>
+      let text = document.getElementById("text");
+
+      window.addEventListener("scroll", (event) => {
+        let value = window.scrollY;
+        text.style.marginRight = value * 2 + "px";
+      });
+    </script>
   </body>
 </html>
